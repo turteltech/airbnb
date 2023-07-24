@@ -9,22 +9,18 @@ import { UserList } from "./user/UserList";
 import { UserCreate } from "./user/UserCreate";
 import { UserEdit } from "./user/UserEdit";
 import { UserShow } from "./user/UserShow";
-import { OrderList } from "./order/OrderList";
-import { OrderCreate } from "./order/OrderCreate";
-import { OrderEdit } from "./order/OrderEdit";
-import { OrderShow } from "./order/OrderShow";
-import { CustomerList } from "./customer/CustomerList";
-import { CustomerCreate } from "./customer/CustomerCreate";
-import { CustomerEdit } from "./customer/CustomerEdit";
-import { CustomerShow } from "./customer/CustomerShow";
-import { AddressList } from "./address/AddressList";
-import { AddressCreate } from "./address/AddressCreate";
-import { AddressEdit } from "./address/AddressEdit";
-import { AddressShow } from "./address/AddressShow";
-import { ProductList } from "./product/ProductList";
-import { ProductCreate } from "./product/ProductCreate";
-import { ProductEdit } from "./product/ProductEdit";
-import { ProductShow } from "./product/ProductShow";
+import { ListingList } from "./listing/ListingList";
+import { ListingCreate } from "./listing/ListingCreate";
+import { ListingEdit } from "./listing/ListingEdit";
+import { ListingShow } from "./listing/ListingShow";
+import { TripList } from "./trip/TripList";
+import { TripCreate } from "./trip/TripCreate";
+import { TripEdit } from "./trip/TripEdit";
+import { TripShow } from "./trip/TripShow";
+import { WishlistList } from "./wishlist/WishlistList";
+import { WishlistCreate } from "./wishlist/WishlistCreate";
+import { WishlistEdit } from "./wishlist/WishlistEdit";
+import { WishlistShow } from "./wishlist/WishlistShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -59,32 +55,25 @@ const App = (): React.ReactElement => {
           show={UserShow}
         />
         <Resource
-          name="Order"
-          list={OrderList}
-          edit={OrderEdit}
-          create={OrderCreate}
-          show={OrderShow}
+          name="Listing"
+          list={ListingList}
+          edit={ListingEdit}
+          create={ListingCreate}
+          show={ListingShow}
         />
         <Resource
-          name="Customer"
-          list={CustomerList}
-          edit={CustomerEdit}
-          create={CustomerCreate}
-          show={CustomerShow}
+          name="Trip"
+          list={TripList}
+          edit={TripEdit}
+          create={TripCreate}
+          show={TripShow}
         />
         <Resource
-          name="Address"
-          list={AddressList}
-          edit={AddressEdit}
-          create={AddressCreate}
-          show={AddressShow}
-        />
-        <Resource
-          name="Product"
-          list={ProductList}
-          edit={ProductEdit}
-          create={ProductCreate}
-          show={ProductShow}
+          name="Wishlist"
+          list={WishlistList}
+          edit={WishlistEdit}
+          create={WishlistCreate}
+          show={WishlistShow}
         />
       </Admin>
     </div>
